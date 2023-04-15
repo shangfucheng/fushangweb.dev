@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" >
+	<meta name="description" content="Simple demo Web page for CSE 134B">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="fucheng-shang" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Portfoilo Site</title>
+	<link href="images/favicon.ico" rel="icon" >
+	<link href="fuchengshang.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<script src="node_modules/dompurify/dist/purify.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js" integrity="sha512-TU4FJi5o+epsahLtM9OFRvH2gXmmlzGlysk9wtTFgbYbMvFzh3Cw1l3ubnYIvBiZCC/aurRHS408TeEbcuOoyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="fuchengshang.js"></script>
+	<!-- /*Code syntax highlight lib*/ -->
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<header>	
+		<nav id="nav_bar"> 
+			<a href=""><i class="fas fa-home"></i></a>
+			<a href="https://github.com/shangfucheng" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/fucheng-shang/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		</nav>
+		
+		<div class="stage">
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<div class="layer"></div>
+			<h2 class="header_title">Looking for a Full time Job in</h2>
+			<h2 class="header_title">SDE, Web dev, Networking or Computer Graphic</h2>
+		  </div>
+	</header>
+	
+	<main id="main_content">
+
+		<h1 id="project">Projects demo</h1>
+		<div class="ray_tracing">
+			<div class="rt_desc"><h2>Final Project for CSE 167 - 2022</h2></div>
+			<a href="https://github.com/shangfucheng/Ray_Tracing" target="_blank" title="RayTracing"></a>
+		</div>
+		
+
+		<section class="todo_list">
+			<a href="https://github.com/shangfucheng/cse110-fa22-group26" target="_blank" title="todoList"></a>
+			<h2 class="tolist_desc">TO-DO List Web App for CSE 110 - 2022</h2>
+		</section>
+
+		<div class="amazonflexbot">
+			<div class="amzbot_desc"><h2>Amazon Flex Bot - 2021</h2></div>
+			<a href="https://github.com/shangfucheng/AmazonFlexBot" target="_blank" title="FlexBot"></a>
+		</div>
+
+		<h1 id="aboutme">About Me</h1>
+		<div id="fun_cards">
+			<div class="card">
+				<p style="font-size:2rem; color: burlywood;">Education:</p>
+				<p><strong>UCSD (BS) CS Major - 2021-2023</strong></p>
+				<p><strong>Mt San. College - 2019-2021</strong></p>
+			</div>
+			<div class="card">
+				<p style="font-size:2rem; color: burlywood;">Field of Interest</p>
+				<p>Network Engineer / Network Security</p>
+				<p>Web Development</p>
+				<p>Computer Graphic/Animation</p>
+			</div>
+			<div class="card">
+				<p style="font-size:2rem; color: burlywood;">SKILLS</p>
+				<p>C, C++, HTML, CSS, JavaScript</p>
+				<p>Python, Java, Haskell</p>
+				<p>Assembly, Verilog, Networking</p>
+			</div>
+			<div class="card">
+				<p style="font-size:2rem; color: burlywood;">Tools & Libs</p>
+				<p>OpenGL, Houdini, Kivy, Pytorch</p>
+				<p>React, JQuery, TypeScript, Node.js</p>
+				<p>Git, CI/CD, UI/UX, Vim, WireShark</p>
+			</div>
+		</div>
+		
+		<br>
+
+		<div id="codeBlock">
+			<div class="code">
+				<pre style="float: left;color: black;">
+
+				1
+				2
+				3
+				4
+				5
+				6
+				7
+				8
+				9
+				10
+				11
+				12
+				13
+				14
+				15
+				16
+				17
+				18
+				19
+				20
+				21
+				22
+				23
+				24
+				25
+				26
+				27
+				28
+				29
+				30
+				31
+				32
+				33
+				34
+				35
+				36
+				37
+				38
+				39
+				</pre>
+				<div class="vl"></div>
+				<pre>
+				<code class="prettyprint">
+	/* More About Me */
+	class FuchengShang{
+	private:	
+		std::string Name;
+		std::string Major;
+		std::vector&lt;std::string&gt; Experience; 
+		std::vector&lt;std::string&gt; Skills;
+		std::vector&lt;std::string&gt; Hobbies;
+		std::string Personality;
+	public:
+		FuchengShang(){
+			<span class="highLight">this->Name</span> = Fucheng Shang;
+			<span class="highLight">this->Major</span> = Computer Science;
+			<span class="highLight">this->Experience</span> = {
+				"2016-2018 Autonotive Technician",
+				"2014-2018 SLS AUTO, LLC. Founder, Online Aftermarket parts Retail",
+			};
+			<span class="highLight">this->Skills</span> = {
+				"C", "C++", "Python", "Assembly language", "Java", 
+				"HTML", "JavaScript", "CSS", "Shell Script", "OpenCv", 
+				"Tensorflow", "Pytorch", "Kivy", "Git", "OpenGL", 
+				"Systemverilog", "Quartus", "ISA Design", "Networking", 
+				"Houdini", "REST API", "Haskell", "Unix OS", "Threading",
+				"TypeScript", "React", "JQuery",  "Node.js", "WireShark",
+				"CI/CD", "UI/UX", "Blender", "C#"
+			};
+			<span class="highLight">this->Personality</span> = "I really enjoy learning, it makes me feel comfortable and 
+								satisfied when I mastered a skill. I am an introverted person
+								who enjoys socializing in small doses, and I tend to be more 
+								of a listener than a talker."; 
+
+			<span class="highLight">this->Hobbies</span> = {"Soccer", "Hiking", "Gaming", "Sailing", 
+							"Singing(Terriable)", "Dad Jokes"}; 
+		}
+	}
+				</code>
+			</pre></div>
+		</div>
+
+		<div id="msg">
+			<h1>Interested in Working with Me?</h1>
+			<a href="mailto:fuchengshang@gmail.com"><i class="fa fa-comments"></i>Send a Message</a>
+		</div>
+
+	</main>
+
+	<footer>
+		<p>&copy;2023 💯This page was made with &hearts; by Fucheng Shang 💯</p>
+	</footer>
+</body>
+
+</html>

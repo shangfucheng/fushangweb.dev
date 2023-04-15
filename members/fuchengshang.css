@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&text=Tlegy');
+@import url("//fonts.googleapis.com/css?family=Pacifico&text=Pure");
+@import url("//fonts.googleapis.com/css?family=Roboto:700&text=css");
+@import url("//fonts.googleapis.com/css?family=Kaushan+Script&text=!");
+
+/*Header Style*/
+header{
+    /* background-image: url('../images/ucsd_bgimg.jpeg'); */
+    /* background-position: center; /* Center the image */
+    /* background-repeat: no-repeat; Do not repeat the image */
+    /* background-size: cover; Resize the background image to cover the entire container */ 
+    height:100vh;
+    overflow: auto;
+    padding: 2rem 0;
+    border-bottom: 4px solid hsl(189, 55%, 61%);
+    background: radial-gradient(
+      circle closest-corner at center 50vh,
+      #62eaea,
+      rgb(16, 23, 26) 60%
+    ) no-repeat;
+}
+
+a{
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: #00BAF0;
+}
+a:hover{
+    color: dodgerblue;
+}
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  /* background: linear-gradient(to left, #674b44, #49eea9); */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+  position: relative;
+  top:5%;
+}
+i.fas.fa-home {
+  font-size: 8vmin;
+  padding: 5vmin;
+  text-shadow: 3px 3px 2px rgb(9, 9, 9);
+}
+i.fab.fa-github {
+  font-size: 8vmin;
+  padding: 5vmin;
+  text-shadow: 3px 3px 2px rgb(9, 10, 9);
+}
+i.fab.fa-linkedin {
+  font-size: 8vmin;
+  padding: 5vmin;
+  text-shadow: 3px 3px 2px rgb(6, 7, 6);
+}
+
+.header_title{
+  width: 100%;
+  font-size: clamp(1.0rem, 4vmin, 5vmin);
+  text-shadow: 1px 2px 1px rgb(1, 37, 26);
+  font-family: "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+  position: relative;
+  top: 20vmin;
+  left: -50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1:first-letter{
+    font-size: 200%;
+}
+h2:first-letter{
+    font-size: 200%;
+}
+
+body {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    background-color: hsl(0, 2%, 8%);
+    color: hsl(0, 5%, 81%);
+    line-height: 1.5;
+    font-family: 'Brush Script Std', cursive;
+    text-align: center;
+  }
+  
+.main_content {
+    max-width: 70ch;
+    width: calc(100% - 5rem);
+    overflow-x: hidden;
+}
+
+#project{
+    margin-left: 4rem;
+} 
+  
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.25;
+    background: radial-gradient(
+      circle farthest-corner at center center,
+      #f3c666,
+      #333
+    ) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.ray_tracing{
+    display: inline-flex;
+    float: right;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin-right: 2%;
+    background-color:#1A334D;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ray_tracing_activate {
+    animation-name: rt_animation;
+    animation-duration: 1s;
+  }
+}
+.rt_desc{
+    float: left;
+    width: 100%;
+    margin-left: 3em;
+    font-size: 150%;
+}
+.ray_tracing a{
+    width: 100%;
+    height: 500px; /* You must set a specified height */
+    position: relative;
+    display: inline-block;
+    background-image: url('./images/ray_tracing.png');
+    background-size: contain;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: 600px 400px;
+
+}
+.ray_tracing a:hover{
+    transform: scale(1.05);
+}
+
+@keyframes rt_animation {
+    from {left:-90%;}
+    to {left:2%;}
+  }
+
+.todo_list{
+    display: inline-flex;
+    float:left;
+    width: 98%;
+    position: relative;
+    align-items: center;
+    margin-left: 2%;
+    background-color: #FFF5BE;
+    opacity: 0;
+}
+
+.tolist_desc{
+    float: right;
+    width: 100%;
+    margin-right: 2em;
+}
+.todo_list a{
+    position: relative;
+    display: inline-block;
+    background-image: url('./images/todolist.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: 600px 400px;
+    width: 100%;
+    height: 500px; /* You must set a specified height */
+}
+.todo_list a:hover{
+    transform: skew(5deg, 5deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tdl_animation_activate {
+    opacity: 1;
+    transition: all 8s;
+  }
+}
+
+.amazonflexbot{
+    display: inline-flex;
+    float:right;
+    width: 98%;
+    position: relative;
+    align-items: center;
+    margin-right: 2%;
+    /* background-color: rgb(44, 15, 4); */
+    background-color: #252829;
+}
+.amazonflexbot a{
+    position: relative;
+    display: inline-block;
+    background-image: url('./images/amazonflexbot.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: 400px 600px;
+    width: 100%;
+    height: 600px; /* You must set a specified height */
+}
+.amzbot_desc{
+    float: left;
+    width: 100%;
+    margin-left: 2em;
+}
+.amazonflexbot a:hover{
+    transform: rotate(5deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .amzb_animation_activate {
+    animation-name: amzb_animation;
+    animation-duration: 1s;
+  }
+}
+@keyframes amzb_animation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+
+#aboutme {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: #27292c;
+    flex-direction: row;
+    /* width: 100%; */
+    text-align: center;
+    padding: 30px;
+}
+/* 
+a[href*="#"]{
+    color: aquamarine;
+} */
+
+#fun_cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  width: 90%;
+  margin: 5%;
+}
+
+.card{
+  height: 280px;
+  width: 100%;  
+  border-radius: 10px;
+  position: relative;
+  border: 5px solid rgba(50, 48, 48, 0.1);
+  cursor: pointer;
+  text-align: center;
+  place-items: center center;
+  /*Fallback if gradeints don't work */
+  background: #242325;
+  /*Linear gradient... */
+  background: 
+    radial-gradient(
+     at center, #54b3f3, #2f3634
+    );
+  opacity: 0.3;
+  box-shadow: 10px 10px 10px rgba(190, 209, 211, 0.5);
+}
+
+.card > p{
+  font-size: clamp(10px, 1.5vw, 1.5rem); 
+  visibility: hidden;
+}
+
+.card:hover{
+  opacity: 1;
+  transform: translateY(-15.1px);
+  transition: 0.5s;
+  z-index: 1;
+  border: 5px solid #058785;
+  box-shadow: 0 5px 20px rgba(216, 209, 209, 0.8);
+}
+
+.vl{
+  border-left: 6px solid green;
+  position: relative;
+  /* min-height: 110vmax;
+  max-height: 110vmax; */
+  float: left;
+  height: 100%;
+}
+
+#codeBlock{
+  display: inline-block;
+  text-align: left;
+  background-color:rgb(28, 40, 40);
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: x-large;
+  font-weight: bold;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgb(9, 9, 9);
+}
+#codeBlock:hover{
+  cursor: text;
+}
+pre{
+  font-size: clamp(3px, 1.7vw, 1.3rem);
+  white-space: pre-wrap;
+  tab-size: 3;
+}
+
+#msg{
+  display: flexbox;
+  margin: 100px 50px 100px 50px;
+}
+#msg i{
+  animation: msg_animation 2s 2s infinite ease-out;
+}
+#msg a{
+  font-size: 2vmin;
+  margin-left: 20px;
+}
+@keyframes msg_animation{
+  from {transform:scale(1.1);}
+    to {transform: scale(1.0);} 
+}
+
+#msg > h1{
+  float: left;
+  position: relative;
+  left: 5%;
+  margin-right: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+i.fa.fa-comments{
+  font-size: 8rem;
+}
+.highLight{
+  background-color: #00BAF0;
+}
+/*Header 3d Effect*/ 
+.stage {
+  height: 30%;
+  width: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  perspective: 9999px;
+  transform-style: preserve-3d;
+  overflow: visible !important;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: threeD 5s infinite alternate ease-in-out -7.5s;
+  animation-fill-mode:  forwards;
+  transform: rotateY(30deg) rotateX(33deg) translateZ(0);
+}
+
+.layer:after {
+  font: 120px/0.65 "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+  content: "                  Hey!\a\aMy Name is \a\a Fucheng Shang!";
+  white-space: pre;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:-13vmin;
+  left:-5vmin;
+  color: rgb(20, 18, 18);
+  letter-spacing: -2px;
+  font-size: clamp(10vmin, 10vmin, 15vmin);
+}
+
+.layer:nth-child(1):after {
+  transform: translateZ(0px);
+}
+
+.layer:nth-child(2):after {
+  transform: translateZ(-1.5px);
+}
+
+.layer:nth-child(3):after {
+  transform: translateZ(-3px);
+}
+
+.layer:nth-child(4):after {
+  transform: translateZ(-4.5px);
+}
+
+.layer:nth-child(5):after {
+  transform: translateZ(-6px);
+}
+
+.layer:nth-child(6):after {
+  transform: translateZ(-7.5px);
+}
+
+.layer:nth-child(7):after {
+  transform: translateZ(-9px);
+}
+
+.layer:nth-child(8):after {
+  transform: translateZ(-10.5px);
+}
+
+.layer:nth-child(9):after {
+  transform: translateZ(-12px);
+}
+
+.layer:nth-child(10):after {
+  transform: translateZ(-13.5px);
+}
+
+.layer:nth-child(11):after {
+  transform: translateZ(-15px);
+}
+
+.layer:nth-child(12):after {
+  transform: translateZ(-16.5px);
+}
+
+.layer:nth-child(13):after {
+  transform: translateZ(-18px);
+}
+
+.layer:nth-child(14):after {
+  transform: translateZ(-19.5px);
+}
+
+.layer:nth-child(15):after {
+  transform: translateZ(-21px);
+}
+
+.layer:nth-child(16):after {
+  transform: translateZ(-22.5px);
+}
+
+.layer:nth-child(17):after {
+  transform: translateZ(-24px);
+}
+
+.layer:nth-child(18):after {
+  transform: translateZ(-25.5px);
+}
+
+.layer:nth-child(19):after {
+  transform: translateZ(-27px);
+}
+
+.layer:nth-child(20):after {
+  transform: translateZ(-28.5px);
+}
+
+.layer:nth-child(n+10):after {
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.25);
+}
+
+.layer:nth-child(n+11):after {
+  -webkit-text-stroke: 10px rgb(41, 83, 103);
+  text-shadow: 6px 0 6px #026b62, 5px 5px 5px #002951, 0 6px 6px #00366b;
+}
+
+.layer:nth-child(n+12):after {
+  -webkit-text-stroke: 10px #0077ea;
+}
+
+.layer:last-child:after {
+  -webkit-text-stroke: 13px rgba(0, 0, 0, 0.1);
+}
+
+.layer:first-child:after {
+  color: #77efe9;
+  text-shadow: none;
+}
+
+@keyframes threeD {
+  100% {
+    transform: rotateY(-30deg) rotateX(-30deg);
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .header_title{
+    top: 33vmin;
+    left: -50px;
+  }
+}
